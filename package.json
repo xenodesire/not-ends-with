@@ -1,0 +1,34 @@
+{
+  "name": "not-ends-with",
+  "version": "1.0.0",
+  "description": "A pure utility function to check if a string does not end with a specific suffix.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["string", "endsWith", "utility", "pure-function"],
+  "author": "Bruno G. Ciccarino",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xenodesire/not-ends-with.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.0"
+  }
+}
